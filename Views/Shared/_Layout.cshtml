@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="c7MniS9lj1MasQdZCT3RvPXiEDPeyXvwhgyKn7VlNH8" />
+    <meta property="og:title" content="@ViewBag.OGTitle" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@ViewBag.OGUrl" />
+    <meta property="og:description" content="@ViewBag.OGDescription" />
+    <title>SampleWebsite</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/fira/fira.css">
+    <link rel="stylesheet" href="~/lib/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="/">Sample Website</a>
+                </div>
+                <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/about" class="nav-button">About</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container body-content full-height">
+
+        @RenderBody()
+
+        <div class="row">
+            <hr class="footer-hr" />
+            <div class="row footer">
+                <div class="col-md-9" style="padding-top:10px;">
+                    <p>Designed, Built and Managed by Ian Carey - @DateTime.Now.Year | <a href="mailto:ian@iancarey.ie">Contact</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

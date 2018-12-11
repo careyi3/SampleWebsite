@@ -1,0 +1,8 @@
+#!/bin/bash
+export ASPNETCORE_ENVIRONMENT=Development
+dotnet restore
+npm install
+bower install
+dotnet bundle
+dotnet build
+dotnet run

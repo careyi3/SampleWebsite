@@ -1,0 +1,24 @@
+{
+  "name": "SampleWebsite",
+  "authors": [
+    "Ian Carey"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v3.3.7",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "fira": "Fira#*",
+    "font-awesome": "^5.2.0"
+  }
+}
